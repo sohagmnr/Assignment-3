@@ -3,9 +3,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rinterio</title>
+
+    <!-- DaisyUI and Tailwindcss cdns -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- fontawesome cdn -->
+    <script src="https://kit.fontawesome.com/dbc656d808.js" crossorigin="anonymous"></script>
+    <style>
+        .font-family{
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#ABEF5F',
+                'btn-menu': '#FF4240',
+                'btn-body': '#ABEF5F80',
+                'process-1': '#E7C1D3',
+                'process-2': '#EFDA6E',
+                'process-3': '#A4DAC3',
+                'process-4': '#77AAEA',
+              }
+            }
+          }
+        }
+      </script>
+
 </head>
-<body>
-    
+<body class="font-family ">
+    <!-- header section -->
+    <header>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              
+              <i class="fa-solid fa-arrow-right -rotate-45 p-3 bg-[#ABEF5F]  rounded-full"></i>
+              <a class="btn btn-ghost text-4xl font-extrabold">Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="font-bold" >Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <i class="fa-solid  fa-magnifying-glass"></i>
+              <i class="fa-solid fa-cart-shopping ml-4"></i>
+              <a class="btn rounded-full bg-[#ABEF5F] ml-4">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 p-3 bg-[#1C1C1C] text-white rounded-full"></i></a>
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a>Home</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </header>
+    <!-- main section -->
+    <main>
+        <!-- header section -->
+        <section class="flex items-center flex-col ml-4 mr-4">
+            <div>
+                <img src="assets/banner.png" alt="">
+            </div>
+            <div class="text-center">
+                <h1 class="text-[28px] font-extrabold">A barn house of this design has a striking appearance</h1>
+                <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                <button class="bg-[#ABEF5F] bg-opacity-50 font-bold w-full rounded-full p-1 font-bold text-[20px] " >View Details<i class="ml-[6px] fa-solid fa-arrow-right -rotate-45 p-2 bg-[#ABEF5F]  rounded-full"></i></button>
+            </div>
+        </section>
+        <!-- about section -->
+        <section>
+            <div>
+                <button><i class="fa-solid fa-arrow-right"></i>About Us</button>
+                <h2>We design thoughtful, liveable spaces</h2>
+                <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                <div>
+                    <div>
+                        <img src="assets/commercial.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Commercial</h4>
+                        <p>The barn house captivates with its blend of rustic charm and modern</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="assets/residential.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Residential</h4>
+                        <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="assets/Rectangle.png" alt="">
+            </div>
+        </section>
+        <!-- user and review section -->
+        <section>
+            <div>
+                <i class="fa-regular fa-comments"></i>
+                <h3>235+</h3>
+                <p>Happy Client Review</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-rectangle-list"></i>
+                <h3>50+</h3>
+                <p>Work departments</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-user-group"></i>
+                <h3>30k+</h3>
+                <p>Our Happy Client</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-users"></i>
+                <h3>307+</h3>
+                <p>Staff Members</p>
+            </div>
+        </section>
+        <!-- how we works section -->
+         <section>
+            <div>
+                <button><i class="fa-solid fa-arrow-right"></i>How we works</button>
+                <h2>Our Works Process</h2>
+                <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            </div>
+            <div>
+                <div>
+                    <img src="assets/concept.png" alt="">
+                    <h4>Concept</h4>
+                    <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+                <div>
+                    <img src="assets/flow-chart.png" alt="">
+                    <h4>Design Process</h4>
+                    <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+                <div>
+                    <img src="assets/vision.png" alt="">
+                    <h4>Supervision</h4>
+                    <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+                <div>
+                    <img src="assets/budget-planning.png" alt="">
+                    <h4>Budget Planning</h4>
+                    <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+            </div>
+         </section>
+         <!-- our latest works section -->
+        <section>
+            <div>
+                <button><i class="fa-solid fa-arrow-right"></i>Explore our Latest works</button>
+                <h2>Our Latest Portfolio</h2>
+                <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            </div>
+            <div>
+
+            </div>
+        </section>
+        <!-- Rinterio News section -->
+        <section>
+            <div>
+                <button><i class="fa-solid fa-arrow-right"></i>Rinterio News</button>
+                <h2>Read Our Article and News</h2>
+                <p>The barn house captivates with its blend of rustic charm and  modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="assets/article1.png" alt="">
+                    </div>
+                    <div>
+                        <div></div>
+                        <h4>How to choose the furniture right of your home</h4>
+                        <p>The barn house captivates with its blend of rustic charm and modern. </p>
+                        <button>Read More<i class="fa-solid fa-arrow-right -rotate-45 p-2 bg-[#ABEF5F]  rounded-full"></i></button>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="assets/article2.png" alt="">
+                    </div>
+                    <div>
+                        <div></div>
+                        <h4>How to choose the furniture right of your home</h4>
+                        <p>The barn house captivates with its blend of rustic charm and modern. </p>
+                        <button>Read More<i class="fa-solid fa-arrow-right -rotate-45 p-2 bg-[#ABEF5F]  rounded-full"></i></button>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="assets/article3.png" alt="">
+                    </div>
+                    <div>
+                        <div></div>
+                        <h4>How to choose the furniture right of your home</h4>
+                        <p>The barn house captivates with its blend of rustic charm and modern. </p>
+                        <button>Read More<i class="fa-solid fa-arrow-right -rotate-45 p-2 bg-[#ABEF5F]  rounded-full"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- lets connect section -->
+        <section>
+            <div>
+                <button><i class="fa-solid fa-arrow-right"></i>Lets connect</button>
+                <h2>Let's Discuss Next Project</h2>
+                <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            </div>
+        </section>
+    </main>
+    <!-- footer section -->
+    <footer>
+
+    </footer>
 </body>
 </html>
