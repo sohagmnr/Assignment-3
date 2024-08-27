@@ -16,48 +16,20 @@
 
     <!-- fontawesome cdn -->
     <script src="https://kit.fontawesome.com/dbc656d808.js" crossorigin="anonymous"></script>
+    
     <style>
         .font-family{
             font-family: "Manrope", sans-serif;
         }
     </style>
-    <!-- <script>
-        tailwind.config = {
-          theme: {
-            screens: {
-                sm: '480px',
-                md: '768px',
-                lg: '976px',
-                xl: '1440px'
 
-            },
-            extend: {
-              colors: {
-                primary: '#ABEF5F',
-                lightGray: '#737373',
-                lightDark: '#494949',
-                dark: '#212121'
-              }
-            }
-          }
-        }
-      </script> -->
-      <script>
+    <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         primary_btn: '#ABEF5F',
-                        heading_text: '#212121',
-                        heading_p: '#494949',
-                        card_p: '#737373',
-                        bg_white: '#FFFFFF',
-                        bg_slate: '#F4F4F4',
                     },
-                    backgroundImage: {
-                        discuss_bg: "url('./assets/bg.jpg')",
-                    }
-
                 },
             },
         }
@@ -69,7 +41,7 @@
 
     <!-- header section -->
 
-    <header class="bg-gradient-to-t from-white to-gray-100">
+    <header class="bg-gradient-to-t from-white to-gray-100 ">
         <!-- Nav section -->
          <nav class=" w-10/12 mx-auto">
         <div class="navbar justify-between">
@@ -129,14 +101,18 @@
     <main class="bg-[#F4F4F4] flex flex-col items-center justify-center mt-10">
 
         <!-- about us section -->
-        <section class="bg-[#F4F4F4] w-full ">
-            <div class="md:mx-auto lg:mx-auto   lg:pl-20">
-              <img class="pt-5 pl-40 " src="./assets/Vector.png" alt="">
+        <section class="bg-[#F4F4F4] max-w-[1500px] mx-auto mt-5 lg:mt-20">
+
+            <div class="md:mx-auto lg:mx-auto lg:relative">
+
+              <img class="pt-5 lg:absolute max-lg:hidden lg:-top-16 lg:-left-10" src="./assets/Vector.png" alt="">
+
               <button class="btn pl-8 rounded-3xl mt-5 bg-white">
                 <i class="fa-solid fa-arrow-right"></i>
                 About Us
               </button>
             </div>
+
             <div class="flex-1 lg:flex justify-evenly ">
               <div>
                 <div class="  md:mx-auto lg:mx-auto container mt-5  ">
@@ -170,9 +146,11 @@
                   </div>
                 </div>
               </div>
+
               <div class="flex justify-center   ">
                 <img class="  h-[400px] lg:w-full lg:h-auto" src="./assets/Rectangle.png" alt="">
               </div>
+
             </div>
         </section>
 
@@ -218,7 +196,7 @@
 
 
         <!-- how we works section -->
-        <section class="container mx-auto max-sm:px-5">
+        <section class="container mx-auto max-sm:px-5 mb-20">
             <!-- details section -->
             <div class="container mx-auto max-sm:px-5">
                 <div class="flex flex-col items-center space-y-5 max-sm:px-1">
@@ -318,7 +296,7 @@
                 </div>
             </div>
 
-            <div class=" items-center justify-center gap-5  m-auto grid w-10/12 grid-cols-1  md:gap-x-3 md:gap-y-3 lg:grid-cols-10 rounded-3xl md:grid-cols-2 md:grid-rows-4 lg:grid-rows-2">
+            <div class=" mt-10 items-center justify-center gap-5  m-auto grid w-10/12 grid-cols-1  md:gap-x-3 md:gap-y-3 lg:grid-cols-10 rounded-3xl md:grid-cols-2 md:grid-rows-4 lg:grid-rows-2">
 
                 <div class="w-full rounded-2xl bg-white md:relative md:col-span-2 md:grid md:grid-cols-2 lg:col-span-7 xl:border xl:border-gray-300">
                     <figure class="p-4">
@@ -334,12 +312,7 @@
                             and modern.
                         </p>
                         <div class="card-actions">
-                            <button class="flex h-12 items-center justify-start gap-2 hover:bg-lime-300">
-                                <p class="text-base font-bold">View Details</p>
-                                <div class="relative h-8 w-8 rounded-full bg-lime-300">
-                                    <img src="assets/icon.svg" class="absolute inset-0 m-auto size-3"/>
-                                </div>
-                            </button>
+                            <button class=" font-bold">View Details<i class="fa-solid fa-arrow-right-long -rotate-45 bg-[#ABEF5F] p-2 rounded-full m-2"></i></button>
                         </div>
                     </div>
                 </div>
@@ -372,11 +345,7 @@
                     class="w-full rounded-2xl bg-white md:relative md:col-span-2 md:grid md:grid-cols-2 lg:col-span-6 xl:border xl:border-gray-300"
                 >
                     <figure class="p-4">
-                    <img
-                        src="assets/img4.png"
-                        alt="Shoes"
-                        class="w-full rounded-xl md:h-[155px] md:w-[220px]"
-                    />
+                        <img src="assets/img4.png" class="w-full rounded-xl md:h-[155px] md:w-[220px]"/>
                     </figure>
                     <div
                     class="px-6 py-2 md:absolute md:left-[255px] md:top-5 md:px-0 lg:top-3 xl:top-6"
@@ -389,18 +358,7 @@
                         modern.
                     </p>
                     <div class="card-actions">
-                        <button
-                        class="flex h-12 items-center justify-start gap-2 hover:bg-lime-300"
-                        >
-                        <p class="text-base font-bold">View Details</p>
-                        <div class="relative h-8 w-8 rounded-full bg-lime-300">
-                            <img
-                            src="assets/icon.svg"
-                            alt=""
-                            class="absolute inset-0 m-auto size-3"
-                            />
-                        </div>
-                        </button>
+                        <button class=" font-bold">View Details<i class="fa-solid fa-arrow-right-long -rotate-45 bg-[#ABEF5F] p-2 rounded-full m-2"></i></button>
                     </div>
                     </div>
                 </div>
@@ -495,12 +453,9 @@
         
         <section class="bg-[url('assets/bg.jpg')]">
             <div class="w-10/12 md:w-8/12 mx-auto my-15 py-20">
-
                 <div class="text-center">
                     <div>
-                        <button
-                            class=" md:ml-20 rounded-full text-sm md:text-lg mb-6 bg-col-secondary px-6 py-3 bg-base-100 shadow-xl font-extrabold"><i
-                                class="fa-solid fa-arrow-right"></i> Let's Connect
+                        <button class="bg-[#D4F6AE] md:ml-20 rounded-full text-sm md:text-lg mb-6 px-6 py-3 bg-base-100 shadow-xl font-extrabold"><i class="fa-solid fa-arrow-right"></i> Let's Connect
                         </button>
                     </div>
                     <div class="text-center md:ml-20 space-y-5 mb-10">
@@ -518,10 +473,8 @@
                         <textarea name="textarea" placeholder="Write your Message here" rows="6"
                             class="md:col-span-2  rounded-3xl p-4 text-lg"></textarea>
                     </div>
-                    <div class="text-center mt-10">
-                        <button class="bg-col-primary p-2 rounded-full space-x-2 w-full"><span
-                                class="text-xl text-black font-extrabold">Send Mail</span><i
-                                class="bg-black text-col-primary fa-solid fa-arrow-right -rotate-45 p-2 rounded-full "></i>
+                    <div class="text-center mt-10 w-full bg-[#ABEF5F] rounded-full">
+                        <button class="p-2 rounded-full space-x-2 w-full"><span class="text-xl text-black font-extrabold ">Send Mail</span><i class="bg-black text-white fa-solid fa-arrow-right -rotate-45 p-2 rounded-full "></i>
                         </button>
                     </div>
                 </div>
@@ -543,7 +496,7 @@
                         <h5 class="btn btn-ghost text-[32px] font-extrabold text-[#E9E9E9]"> <i
                                 class="fa-solid fa-arrow-right rounded-full flex  items-center justify-center bg-primary_btn text-[#1F3548] w-[35px] h-[35px] text-[16px] -rotate-45 ml-3"></i>
                             Rinterio</h5>
-                        <p class="text-base font-medium text-card_p mx-auto md:w-4/5 lg:w-3/5">
+                        <p class="text-base font-medium text-[#737373] mx-auto md:w-4/5 lg:w-3/5">
                             Rinterio specializes in
                             innovative interior design for homes, offices, hotels, and restaurants. Our expert team
                             combines creativity and functionality to transform spaces, bringing your vision to life with
@@ -562,7 +515,7 @@
                     <div><a href="#"><li>Contact Us</li></a></div>
                 </div>
 
-                <div class="flex items-center justify-center mt-12"><a class="btn bg-primary_btn border-none  text-xl font-extrabold rounded-[32px] mx-auto text-[#1C1C1C] flex  items-center justify-center">Book Consult<i class="fa-solid fa-arrow-right rounded-full flex  items-center justify-center bg-[#1C1C1C] w-[35px] h-[35px] text-[16px] -rotate-45 ml-3 text-white"></i></a>
+                <div class="flex items-center justify-center mt-12"><a class="btn flex  items-center justify-center bg-primary_btn border-none  text-xl font-extrabold rounded-[32px] mx-auto text-[#1C1C1C] ">Book Consult<i class="fa-solid fa-arrow-right rounded-full flex  items-center justify-center bg-[#1C1C1C] w-[35px] h-[35px] text-[16px] -rotate-45 ml-3 text-white"></i></a>
                 </div>
             </nav>
         </section>
